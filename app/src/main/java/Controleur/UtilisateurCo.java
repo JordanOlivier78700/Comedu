@@ -1,4 +1,4 @@
-package com.example.jogral.comedu;
+package Controleur;
 
 public class UtilisateurCo {
 
