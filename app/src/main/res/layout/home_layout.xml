@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jogral.comedu.Login">
+
+    <Button
+        android:id="@+id/bt_acces"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:text="Acceder aux questionnaires"
+        app:layout_constraintBottom_toTopOf="@+id/bt_modif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_modif"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Modifier un questionnaire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_titre"
+        android:layout_width="228dp"
+        android:layout_height="73dp"
+        android:text="ComÉdu"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <TextView
+        android:id="@+id/tv_soustitre"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:text="Bienvenue !"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/comedu"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <ImageView
+        android:id="@+id/iv_itescia"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/itescia"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+</android.support.constraint.ConstraintLayout>
