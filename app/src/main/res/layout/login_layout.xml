@@ -4,64 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jogral.comedu.Login">
-
-    <Button
-        android:id="@+id/bt_acces"
-        android:layout_width="320dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="16dp"
-        android:text="Acceder aux questionnaires"
-        app:layout_constraintBottom_toTopOf="@+id/bt_modif"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/bt_modif"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Modifier un questionnaire"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_titre"
-        android:layout_width="228dp"
-        android:layout_height="73dp"
-        android:text="ComÉdu"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance"
-        android:textSize="50sp"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="136dp" />
-
-    <TextView
-        android:id="@+id/tv_soustitre"
-        android:layout_width="228dp"
-        android:layout_height="72dp"
-        android:text="Bienvenue !"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="200dp" />
+    tools:context="com.example.jogral.comedu.Login"
+    tools:layout_editor_absoluteY="81dp">
 
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="120dp"
-        android:layout_height="100dp"
+        android:layout_height="83dp"
         app:srcCompat="@drawable/comedu"
         tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="36dp" />
+        tools:layout_editor_absoluteY="114dp" />
 
     <ImageView
         android:id="@+id/iv_itescia"
         android:layout_width="149dp"
-        android:layout_height="64dp"
+        android:layout_height="83dp"
         app:srcCompat="@drawable/itescia"
         tools:layout_editor_absoluteX="232dp"
         tools:layout_editor_absoluteY="1dp" />
+
+    <EditText
+        android:id="@+id/ed_login"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:autoText="false"
+        android:text="Login"
+        android:textAlignment="viewStart"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:text="Password"
+        android:textAlignment="viewStart"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <Button
+        android:id="@+id/bt_valider"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/txt_mdp"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:autoLink="email"
+        android:linksClickable="true"
+        android:text="@string/lostpassword"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_valider"
+        app:layout_constraintStart_toStartOf="@+id/et_pass"
+        tools:layout_editor_absoluteY="446dp" />
 
 </android.support.constraint.ConstraintLayout>
