@@ -1,4 +1,4 @@
-package com.example.jogral.comedu;
+package Controleur;
 import java.util.Vector;
 
 public class Visiteur {
