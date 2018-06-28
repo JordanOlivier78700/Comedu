@@ -30,38 +30,44 @@
         android:id="@+id/tv_titre"
         android:layout_width="228dp"
         android:layout_height="73dp"
+        android:layout_marginStart="78dp"
         android:text="ComÉdu"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance"
         android:textSize="50sp"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="136dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
     <TextView
         android:id="@+id/tv_soustitre"
         android:layout_width="228dp"
         android:layout_height="72dp"
+        android:layout_marginStart="78dp"
         android:text="Bienvenue !"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titre" />
 
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="120dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/comedu"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="36dp" />
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comedu" />
 
     <ImageView
         android:id="@+id/iv_itescia"
         android:layout_width="149dp"
         android:layout_height="64dp"
-        app:srcCompat="@drawable/itescia"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="3dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/itescia" />
 
 </android.support.constraint.ConstraintLayout>

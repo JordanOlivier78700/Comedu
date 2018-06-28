@@ -17,28 +17,36 @@
         android:layout_marginTop="32dp"
         app:layout_constraintBottom_toTopOf="@+id/ed_login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/comedu" />
 
     <ImageView
         android:id="@+id/iv_itescia"
         android:layout_width="149dp"
         android:layout_height="83dp"
-        app:srcCompat="@drawable/itescia"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="1dp" />
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/itescia" />
 
     <EditText
         android:id="@+id/ed_login"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="250dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="232dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_login"
@@ -79,24 +87,25 @@
         android:text="Valider"
         app:layout_constraintBottom_toBottomOf="@+id/bt_quitter"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
-        app:layout_constraintStart_toEndOf="@+id/bt_quitter"
         app:layout_constraintTop_toTopOf="@+id/bt_quitter" />
 
     <Button
         android:id="@+id/bt_quitter"
         android:layout_width="0dp"
-        android:layout_height="70"
+        android:layout_height="70dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginTop="129dp"
         android:text="Quitter"
-        app:layout_constraintEnd_toStartOf="@+id/bt_suivant"
+        app:layout_constraintEnd_toStartOf="@+id/bt_valider"
         app:layout_constraintStart_toStartOf="@+id/txt_mdp"
-        tools:layout_editor_absoluteY="505dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_mdp" />
 
     <TextView
         android:id="@+id/txt_mdp"
         android:layout_width="0dp"
         android:layout_height="21dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginTop="9dp"
         android:autoLink="email"
         android:linksClickable="true"
         android:text="@string/lostpassword"
@@ -104,6 +113,6 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
         app:layout_constraintStart_toStartOf="@+id/et_pass"
-        tools:layout_editor_absoluteY="355dp" />
+        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
 
 </android.support.constraint.ConstraintLayout>
