@@ -74,26 +74,25 @@
         android:id="@+id/cb_repLibre"
         android:layout_width="221dp"
         android:layout_height="37dp"
+        android:layout_marginTop="32dp"
         android:text="Permettre les réponses libres"
-        app:layout_constraintBottom_toTopOf="@+id/cb_"
-        app:layout_constraintStart_toStartOf="@+id/rb_choix2" />
+        app:layout_constraintStart_toStartOf="@+id/rb_choix2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_plus" />
 
     <CheckBox
         android:id="@+id/cb_"
         android:layout_width="221dp"
         android:layout_height="37dp"
-        android:layout_marginBottom="24dp"
         android:text="Plusieurs réponses possibles"
-        app:layout_constraintBottom_toTopOf="@+id/bt_valider"
+        app:layout_constraintTop_toBottomOf="@+id/cb_repLibre"
         tools:layout_editor_absoluteX="61dp" />
 
     <Button
         android:id="@+id/bt_valider"
         android:layout_width="164dp"
         android:layout_height="70dp"
-        android:layout_marginStart="24dp"
         android:text="Valider Sauvegarder"
-        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="187dp"
         tools:layout_editor_absoluteY="425dp" />
 
     <Button
@@ -101,7 +100,7 @@
         android:layout_width="164dp"
         android:layout_height="70dp"
         android:text="Quitter"
-        app:layout_constraintStart_toEndOf="@+id/bt_valider"
-        app:layout_constraintTop_toTopOf="@+id/bt_valider" />
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="425dp" />
 
 </android.support.constraint.ConstraintLayout>

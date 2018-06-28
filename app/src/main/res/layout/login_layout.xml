@@ -9,11 +9,17 @@
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="120dp"
-        android:layout_height="83dp"
-        app:srcCompat="@drawable/comedu"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="114dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comedu" />
 
     <ImageView
         android:id="@+id/iv_itescia"
@@ -25,12 +31,14 @@
 
     <EditText
         android:id="@+id/ed_login"
-        android:layout_width="249dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="232dp" />
 
     <TextView
         android:id="@+id/tv_login"
@@ -39,17 +47,21 @@
         android:autoText="false"
         android:text="Login"
         android:textAlignment="viewStart"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="287dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ed_login"
+        app:layout_constraintStart_toStartOf="@+id/ed_login" />
 
     <EditText
         android:id="@+id/et_pass"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_login" />
 
     <TextView
         android:id="@+id/tv_pass"
@@ -57,29 +69,41 @@
         android:layout_height="20dp"
         android:text="Password"
         android:textAlignment="viewStart"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="366dp" />
+        app:layout_constraintBottom_toTopOf="@+id/et_pass"
+        app:layout_constraintStart_toStartOf="@+id/et_pass" />
 
     <Button
         android:id="@+id/bt_valider"
-        android:layout_width="112dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
         android:text="Valider"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_quitter"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter"
+        app:layout_constraintTop_toTopOf="@+id/bt_quitter" />
+
+    <Button
+        android:id="@+id/bt_quitter"
+        android:layout_width="0dp"
+        android:layout_height="70"
+        android:layout_marginEnd="8dp"
+        android:text="Quitter"
+        app:layout_constraintEnd_toStartOf="@+id/bt_suivant"
+        app:layout_constraintStart_toStartOf="@+id/txt_mdp"
+        tools:layout_editor_absoluteY="505dp" />
 
     <TextView
         android:id="@+id/txt_mdp"
         android:layout_width="0dp"
-        android:layout_height="49dp"
+        android:layout_height="21dp"
         android:layout_marginEnd="8dp"
         android:autoLink="email"
         android:linksClickable="true"
         android:text="@string/lostpassword"
         android:textAlignment="viewStart"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/bt_valider"
+        app:layout_constraintEnd_toEndOf="@+id/et_pass"
         app:layout_constraintStart_toStartOf="@+id/et_pass"
-        tools:layout_editor_absoluteY="446dp" />
+        tools:layout_editor_absoluteY="355dp" />
 
 </android.support.constraint.ConstraintLayout>

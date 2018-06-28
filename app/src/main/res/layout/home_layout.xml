@@ -7,17 +7,17 @@
     tools:context="com.example.jogral.comedu.Activite.Login">
 
     <Button
-        android:id="@+id/bt_acces"
+        android:id="@+id/bt_visiteur"
         android:layout_width="320dp"
         android:layout_height="46dp"
         android:layout_marginBottom="16dp"
-        android:text="Acceder aux questionnaires"
-        app:layout_constraintBottom_toTopOf="@+id/bt_modif"
+        android:text="Visiteur"
+        app:layout_constraintBottom_toTopOf="@+id/bt_co"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/bt_modif"
+        android:id="@+id/bt_co"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -61,7 +61,7 @@
         android:layout_width="149dp"
         android:layout_height="64dp"
         app:srcCompat="@drawable/itescia"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="3dp" />
 
 </android.support.constraint.ConstraintLayout>
