@@ -9,62 +9,55 @@
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/ed_login"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="124dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/comedu" />
 
     <ImageView
         android:id="@+id/iv_itescia"
-        android:layout_width="149dp"
-        android:layout_height="83dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/iv_logo"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
 
     <EditText
         android:id="@+id/ed_login"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="584dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_login"
-        android:layout_width="83dp"
-        android:layout_height="18dp"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
         android:autoText="false"
         android:text="Login"
         android:textAlignment="viewStart"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/ed_login"
         app:layout_constraintStart_toStartOf="@+id/ed_login" />
 
     <EditText
         android:id="@+id/et_pass"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="76dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,29 +66,33 @@
 
     <TextView
         android:id="@+id/tv_pass"
-        android:layout_width="85dp"
-        android:layout_height="20dp"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
         android:text="Password"
         android:textAlignment="viewStart"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/et_pass"
         app:layout_constraintStart_toStartOf="@+id/et_pass" />
 
     <Button
         android:id="@+id/bt_valider"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:text="Valider"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/bt_quitter"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter"
         app:layout_constraintTop_toTopOf="@+id/bt_quitter" />
 
     <Button
         android:id="@+id/bt_quitter"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="129dp"
         android:text="Quitter"
+        android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/bt_valider"
         app:layout_constraintStart_toStartOf="@+id/txt_mdp"
         app:layout_constraintTop_toBottomOf="@+id/txt_mdp" />
@@ -103,14 +100,14 @@
     <TextView
         android:id="@+id/txt_mdp"
         android:layout_width="0dp"
-        android:layout_height="21dp"
+        android:layout_height="75dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="9dp"
         android:autoLink="email"
         android:linksClickable="true"
         android:text="@string/lostpassword"
         android:textAlignment="viewStart"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
         app:layout_constraintStart_toStartOf="@+id/et_pass"
         app:layout_constraintTop_toBottomOf="@+id/et_pass" />

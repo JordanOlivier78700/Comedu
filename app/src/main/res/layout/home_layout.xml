@@ -9,9 +9,10 @@
     <Button
         android:id="@+id/bt_visiteur"
         android:layout_width="320dp"
-        android:layout_height="46dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="16dp"
         android:text="Visiteur"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_co"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -19,23 +20,26 @@
     <Button
         android:id="@+id/bt_co"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginBottom="32dp"
         android:text="Modifier un questionnaire"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_titre"
-        android:layout_width="228dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="284dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="70dp"
         android:text="ComÉdu"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance"
-        android:textSize="50sp"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
@@ -43,22 +47,24 @@
         android:id="@+id/tv_soustitre"
         android:layout_width="228dp"
         android:layout_height="72dp"
-        android:layout_marginStart="284dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="300dp"
         android:text="Bienvenue !"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance"
-        android:textSize="30sp"
+        android:textSize="45sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_titre" />
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="0dp"
-        android:layout_height="346dp"
+        android:layout_width="310dp"
+        android:layout_height="350dp"
         android:layout_marginEnd="300dp"
         android:layout_marginStart="300dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="124dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -66,11 +72,12 @@
 
     <ImageView
         android:id="@+id/iv_itescia"
-        android:layout_width="305dp"
-        android:layout_height="198dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/iv_logo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
