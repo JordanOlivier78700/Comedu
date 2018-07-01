@@ -53,7 +53,8 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_deco"/>
 
     <Button
         android:id="@+id/bt_modif"
@@ -66,7 +67,8 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_resultat"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_modif"/>
 
     <Button
         android:id="@+id/bt_envoyer"
@@ -80,7 +82,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bt_modif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_envoyer"/>
 
     <Button
         android:id="@+id/bt_creer"
@@ -94,7 +97,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bt_envoyer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_creer"/>
 
     <Button
         android:id="@+id/bt_resultat"
@@ -108,5 +112,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_resultat"
+        />
 </android.support.constraint.ConstraintLayout>

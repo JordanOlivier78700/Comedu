@@ -6,26 +6,29 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/bt_valider2"
+        android:id="@+id/bt_valider"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginEnd="200dp"
         android:text="Valider Sauvegarder"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_quitter2"
-        tools:layout_editor_absoluteY="979dp" />
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter"
+        tools:layout_editor_absoluteY="979dp"
+        android:onClick="click_valider"/>
 
     <Button
-        android:id="@+id/bt_quitter2"
+        android:id="@+id/bt_quitter"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginStart="200dp"
         android:text="Quitter"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bt_valider2"
-        app:layout_constraintEnd_toStartOf="@+id/bt_valider2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/bt_valider"
+        app:layout_constraintEnd_toStartOf="@+id/bt_valider"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_quitter"
+        />
 
     <TextView
         android:id="@+id/tv_titre"

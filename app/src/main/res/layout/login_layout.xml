@@ -83,7 +83,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/bt_quitter"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
         app:layout_constraintStart_toEndOf="@+id/bt_quitter"
-        app:layout_constraintTop_toTopOf="@+id/bt_quitter" />
+        app:layout_constraintTop_toTopOf="@+id/bt_quitter"
+        android:onClick="click_valider"
+        />
 
     <Button
         android:id="@+id/bt_quitter"
@@ -95,7 +97,9 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/bt_valider"
         app:layout_constraintStart_toStartOf="@+id/txt_mdp"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mdp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_mdp"
+        android:onClick="click_quitter"
+        />
 
     <TextView
         android:id="@+id/txt_mdp"

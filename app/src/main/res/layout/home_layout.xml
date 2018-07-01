@@ -15,7 +15,8 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_co"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_visiteur"/>
 
     <Button
         android:id="@+id/bt_co"
@@ -26,7 +27,9 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_co"
+        />
 
     <TextView
         android:id="@+id/tv_titre"
