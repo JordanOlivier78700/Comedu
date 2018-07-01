@@ -22,7 +22,7 @@
         android:layout_width="320dp"
         android:layout_height="100dp"
         android:layout_marginBottom="32dp"
-        android:text="Modifier un questionnaire"
+        android:text="Se connecter"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

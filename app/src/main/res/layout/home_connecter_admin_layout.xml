@@ -13,7 +13,7 @@
         android:layout_marginEnd="300dp"
         android:layout_marginStart="300dp"
         android:layout_marginTop="150dp"
-        android:text="Bienvenue ! \n Login"
+        android:text="Bienvenue ! \n LoginAdmin"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance"
         android:textSize="45sp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_itescia"
+        android:id="@+id/iv_itescia2"
         android:layout_width="300dp"
         android:layout_height="140dp"
         android:layout_marginStart="32dp"
@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/itescia" />
 
     <ImageView
-        android:id="@+id/iv_logo"
+        android:id="@+id/iv_logo3"
         android:layout_width="130dp"
         android:layout_height="140dp"
         android:layout_marginEnd="32dp"
@@ -41,20 +41,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/comedu" />
-
-    <Button
-        android:id="@+id/bt_repondre"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="300dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginStart="200dp"
-        android:text="Répondre à un questionnaire"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bt_deco"
@@ -67,5 +53,60 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_modif"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="200dp"
+        android:text="Modifier un questionnaire"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_resultat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_envoyer"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="200dp"
+        android:text="Envoyer un questionnaire"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_modif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_creer"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="200dp"
+        android:text="Créer un questionnaire"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_envoyer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_resultat"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="200dp"
+        android:text="Voir les résultats"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

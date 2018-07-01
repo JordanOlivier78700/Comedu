@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">ComEdu</string>
-    <string name="lostpassword"> Mot de passe oublié ?<a href="mailto:support@comedu.com?Subject=Lost%20Password" target="_top">support@comedu.com</a></string>
+    <string name="lostpassword"> Mot de passe oublié ? \n Besoin d"'"un compte ?<a href="mailto:support@comedu.com?Subject=Lost%20Password" target="_top">support@comedu.com</a></string>
 
 </resources>
