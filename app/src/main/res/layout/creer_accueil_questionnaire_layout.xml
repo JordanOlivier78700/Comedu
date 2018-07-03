@@ -9,13 +9,14 @@
         android:id="@+id/bt_valider"
         android:layout_width="0dp"
         android:layout_height="100dp"
+        android:layout_marginBottom="64dp"
         android:layout_marginEnd="200dp"
+        android:onClick="click_valider"
         android:text="Valider Sauvegarder"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_quitter"
-        tools:layout_editor_absoluteY="979dp"
-        android:onClick="click_valider"/>
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter" />
 
     <Button
         android:id="@+id/bt_quitter"
@@ -30,22 +31,6 @@
         android:onClick="click_quitter"
         />
 
-    <TextView
-        android:id="@+id/tv_titre"
-        android:layout_width="0dp"
-        android:layout_height="93dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Titre du questionnaire"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/iv_logo2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <ImageView
         android:id="@+id/iv_logo2"
         android:layout_width="100dp"
@@ -57,16 +42,31 @@
         app:layout_constraintTop_toTopOf="@+id/textView"
         app:srcCompat="@drawable/comedu" />
 
-    <TextView
-        android:id="@+id/tv_description"
-        android:layout_width="312dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="32dp"
+    <EditText
+        android:id="@+id/et_titre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu tristique nulla. Donec sollicitudin nunc a odio blandit, quis volutpat felis feugiat. Sed euismod urna ac ullamcorper maximus. Proin euismod ante et faucibus varius. Maecenas sit amet placerat dolor, vel suscipit orci. In faucibus feugiat auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vivamus viverra dapibus justo. Ut orci leo, pellentesque vitae scelerisque mattis, porta vitae lectus. Nam at congue justo. Pellentesque sed commodo dui. Ut ultrices ultricies aliquam. Cras pretium metus non velit ornare, id iaculis risus ornare. Curabitur euismod blandit nibh ac sodales. Nulla facilisi. Ut dictum euismod rhoncus. Etiam vulputate purus dui, non vehicula dolor imperdiet vel. Aenean sit amet faucibus sem, dictum consequat nulla. Suspendisse id magna molestie, ultrices orci et, dictum eros. Sed semper dolor eu ullamcorper mollis."
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Titre"
+        app:layout_constraintEnd_toStartOf="@+id/iv_logo2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_titre" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="291dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="description"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/et_titre"
+        app:layout_constraintStart_toStartOf="@+id/et_titre"
+        app:layout_constraintTop_toBottomOf="@+id/et_titre" />
 
 </android.support.constraint.ConstraintLayout>
