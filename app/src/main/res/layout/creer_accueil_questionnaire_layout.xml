@@ -64,7 +64,7 @@
         android:ems="10"
         android:inputType="textMultiLine"
         android:text="description"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="@+id/et_titre"
         app:layout_constraintStart_toStartOf="@+id/et_titre"
         app:layout_constraintTop_toBottomOf="@+id/et_titre" />
