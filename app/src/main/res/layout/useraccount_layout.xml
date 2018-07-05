@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_co"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:text="Se déconnecter"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ua_user"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="8dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <TextView
+        android:id="@+id/ua_classe"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Classe :"
+        android:textAlignment="textEnd"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ua_prenom" />
+
+    <TextView
+        android:id="@+id/ua_specialite"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Spécialité :"
+        android:textAlignment="textEnd"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ua_classe" />
+
+    <TextView
+        android:id="@+id/ua_prenom"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Prénom :"
+        android:textAlignment="textEnd"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ua_nom" />
+
+    <TextView
+        android:id="@+id/ua_nom"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:text="Nom :"
+        android:textAlignment="textEnd"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ua_user" />
+
+    <TextView
+        android:id="@+id/ua_nom2"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Nom"
+        android:textAlignment="textStart"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/ua_nom"
+        app:layout_constraintTop_toBottomOf="@+id/ua_user" />
+
+    <TextView
+        android:id="@+id/ua_prenom2"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Prénom"
+        android:textAlignment="textStart"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/ua_prenom"
+        app:layout_constraintTop_toBottomOf="@+id/ua_nom" />
+
+    <TextView
+        android:id="@+id/ua_classe2"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Classe"
+        android:textAlignment="textStart"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/ua_classe"
+        app:layout_constraintTop_toBottomOf="@+id/ua_prenom" />
+
+    <TextView
+        android:id="@+id/ua_specialite2"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Spécialité"
+        android:textAlignment="textStart"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/ua_specialite"
+        app:layout_constraintTop_toBottomOf="@+id/ua_classe" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="310dp"
+        android:layout_height="175dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userlogo" />
+
+    <ImageView
+        android:id="@+id/iv_itescia"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/itescia" />
+
+</android.support.constraint.ConstraintLayout>
