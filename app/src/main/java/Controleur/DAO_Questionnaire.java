@@ -1,3 +1,5 @@
+package Controleur;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -5,12 +7,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DAO_Utilisateurs
+public class DAO_Questionnaire
 {
 
     private String JDBC_driver= "com.mysql.jdbc.Driver";
     private String DB_URL = "jdbc:mysql://localhost/comedu";
-    private String sql_affichage = "select * from users where login = ?";
+    private String sql_affichage = "select * from users, questionnaires where users.login = ?";
 
     //  Database credentials
     private  String USER = "root";
@@ -18,7 +20,7 @@ public class DAO_Utilisateurs
 
     private Statement stmt = null;
 
-    public DAO_Utilisateurs()
+    public DAO_Questionnaire()
     {
     }
 
