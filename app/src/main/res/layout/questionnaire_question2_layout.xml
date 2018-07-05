@@ -116,7 +116,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_quitter"
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter"/>
 
     <Button
         android:id="@+id/bt_quitter"
@@ -130,6 +130,7 @@
         app:layout_constraintEnd_toStartOf="@+id/bt_valider"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!--
     <TextView
         android:id="@+id/tv_question"
         android:layout_width="300dp"
@@ -139,6 +140,7 @@
         android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="200dp" />
+        -->
 
     <EditText
         android:id="@+id/et_choix2"

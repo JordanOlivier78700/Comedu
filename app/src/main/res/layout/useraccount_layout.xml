@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.jogral.comedu.Activite.Login">
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/bt_co"
@@ -147,7 +146,7 @@
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="310dp"
-        android:layout_height="175"
+        android:layout_height="175dp"
         android:layout_marginEnd="300dp"
         android:layout_marginStart="300dp"
         android:layout_marginTop="280dp"
