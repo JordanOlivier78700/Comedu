@@ -38,14 +38,7 @@ public class DAO_Utilisateurs
             }
             catch (SQLException e){e.printStackTrace();return null;}}catch(ClassNotFoundException e) {e.printStackTrace();return null;}
     }
-    /*public void deconnection()
-    {
-    	try
-    	{
-			this.conn.close();
-		}
-    	catch (SQLException e) {e.printStackTrace();}
-    }*/
+
     public boolean recherche (String login, String password)
     {
         //STEP 4: Recherche du contenu de la table "users"
@@ -65,6 +58,7 @@ public class DAO_Utilisateurs
             String password2 = rs.getString("password");
             rs.close();
             stmt.close();
+            conn.close();
             return login2.equals(login) && password.equals(password2);
         }
         catch (SQLException e) {e.printStackTrace();return false;}

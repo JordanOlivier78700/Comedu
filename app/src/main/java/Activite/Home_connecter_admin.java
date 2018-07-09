@@ -27,7 +27,7 @@ public class Home_connecter_admin extends AppCompatActivity {
     }
     public void click_envoyer(View view)
     {
-        //récuper le questionnaire et le destinataire
+        //récupérer le questionnaire et le destinataire
         startActivity(new Intent(this, Home.class));
     }
     public void click_creer(View view)
@@ -37,7 +37,7 @@ public class Home_connecter_admin extends AppCompatActivity {
     public void click_resultat(View view)
     {
         // selectionner le questionnaire
-        startActivity(new Intent(this, Home.class));
+        startActivity(new Intent(this, Resultats_question_layout.class));
     }
 
 }
