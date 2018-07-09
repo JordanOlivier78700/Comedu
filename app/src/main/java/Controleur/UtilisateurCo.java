@@ -9,8 +9,6 @@ public class UtilisateurCo
   private String nom;
   private String classe;
 
-<<<<<<< HEAD
-=======
   public String getLogin() {
     return login;
   }
@@ -23,8 +21,6 @@ public class UtilisateurCo
     return adm;
   }
 
-
->>>>>>> a1fe7db480f56d54aed4551aafb689dd96d4fc0f
   public String login;
   public String password;
   public String nom;
