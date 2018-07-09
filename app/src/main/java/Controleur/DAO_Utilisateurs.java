@@ -12,7 +12,7 @@ public class DAO_Utilisateurs
     private String DB_URL = "jdbc:mysql://localhost/comedu";
     private String sql_affichage = "select * from users where login = ?";
 
-    //  Database credentials
+    //Identifiants de la base de données
     private  String USER = "root";
     private  String PASS = "mdproot";
 
@@ -26,10 +26,10 @@ public class DAO_Utilisateurs
     {
 
 
-        //STEP 2: Ajouter le driver JDBC qui permet la connexion entre le code JAVA et la BDD
+        //Etape 1 : Ajouter le driver JDBC qui permet la connexion entre le code JAVA et la BDD
         try {
             Class.forName(this.JDBC_driver);
-            //STEP 3: Se connecter à la base de données
+            //Etape 2 : Se connecter à la base de données
             System.out.println("Connexion à la base de données...");
             try
             {
@@ -48,7 +48,7 @@ public class DAO_Utilisateurs
     }*/
     public boolean recherche (String login, String password)
     {
-        //STEP 4: Recherche du contenu de la table "tabletest"
+        //STEP 4: Recherche du contenu de la table "users"
         System.out.println();
         System.out.println("Recherche de l'utilisateur dans la base...");
         try
