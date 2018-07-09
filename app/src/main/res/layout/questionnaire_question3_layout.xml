@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_itescia"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/itescia" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comedu" />
+
+    <EditText
+        android:id="@+id/et_question"
+        android:layout_width="470dp"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Avez-vous des remarques autres ?"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_question"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question" />
+
+    <RadioButton
+        android:id="@+id/rb_choix1"
+        android:layout_width="35dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/ib_del1"
+        app:layout_constraintTop_toBottomOf="@+id/et_question" />
+
+    <RadioButton
+        android:id="@+id/rb_choix2"
+        android:layout_width="35dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/ib_del2"
+        app:layout_constraintTop_toBottomOf="@+id/rb_choix1" />
+
+    <ImageButton
+        android:id="@+id/ib_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_plus"
+        app:layout_constraintStart_toStartOf="@+id/ib_del2"
+        app:layout_constraintTop_toTopOf="@+id/tv_plus"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/tv_plus"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Ajouter une réponse"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/ib_plus"
+        app:layout_constraintTop_toBottomOf="@+id/rb_choix2" />
+
+    <ImageButton
+        android:id="@+id/ib_del1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_choix1"
+        app:layout_constraintEnd_toStartOf="@+id/rb_choix1"
+        app:layout_constraintStart_toStartOf="@+id/et_question"
+        app:layout_constraintTop_toTopOf="@+id/rb_choix1"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/ib_del2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_choix2"
+        app:layout_constraintEnd_toStartOf="@+id/rb_choix2"
+        app:layout_constraintStart_toStartOf="@+id/ib_del1"
+        app:layout_constraintTop_toTopOf="@+id/rb_choix2"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <Button
+        android:id="@+id/bt_valider"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="8dp"
+        android:text="Valider Sauvegarder"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter" />
+
+    <Button
+        android:id="@+id/bt_quitter"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="200dp"
+        android:text="Quitter"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_valider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:text="Question n° 3 :"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="200dp" />
+
+    <EditText
+        android:id="@+id/et_choix2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Réponse 2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_choix2"
+        app:layout_constraintStart_toEndOf="@+id/rb_choix2"
+        app:layout_constraintTop_toTopOf="@+id/rb_choix2" />
+
+    <EditText
+        android:id="@+id/et_choix1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Réponse 1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_choix1"
+        app:layout_constraintStart_toEndOf="@+id/rb_choix1"
+        app:layout_constraintTop_toTopOf="@+id/rb_choix1" />
+
+</android.support.constraint.ConstraintLayout>
