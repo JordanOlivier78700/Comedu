@@ -21,7 +21,6 @@ public class UtilisateurCo
     return adm;
   }
 
-
   public String login;
   public String password;
   public String nom;
