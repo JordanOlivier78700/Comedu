@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
     {
         startActivity(new Intent(this, Home.class));
     }
-    public void click_valider(View view)
+    public void click_valider(View view) { startActivity(new Intent(this, Home_connecter_admin.class));}
     {
         /*
         String str_Login = login.getText().toString();
