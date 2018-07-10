@@ -25,6 +25,7 @@ public class DAO_Questions
 
     private Statement stmt = null;
 
+
     public DAO_Questions()
     {
     }
@@ -45,16 +46,8 @@ public class DAO_Questions
             }
             catch (SQLException e){e.printStackTrace();return null;}}catch(ClassNotFoundException e) {e.printStackTrace();return null;}
     }
-    /*public void deconnection()
-    {
-    	try
-    	{
-			this.conn.close();
-		}
-    	catch (SQLException e) {e.printStackTrace();}
-    }*/
-    public boolean recherche_question ;
-    {
+
+    public  recherche_question () {
         //Etape 3 : Recherche du contenu de la table "questions"
         System.out.println();
         System.out.println("Recherche des questions dans la base...");
@@ -73,10 +66,11 @@ public class DAO_Questions
             stmt.close();
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
+            return none;
         }
-    public boolean recherche_par_num_quest(Integer num_questionnaire);
-        {
+    }
+    public boolean recherche_par_num_quest(int num_questionnaire)
+    {
         //Etape 5 : Recherche des questions correspondant à un questionnaire
         System.out.println();
         System.out.println("Recherche des questions dans la base...");
@@ -89,8 +83,8 @@ public class DAO_Questions
 
             //Etape 6 : Enregistrer les résultats de la requête
             rs.next();
-            Integer id_question =rs.getInt("id_question");
-            String num_questionnaire = rs.getString("num_questionnaire");
+            int id_question =rs.getInt("id_question");
+            num_questionnaire = rs.getInt(("num_questionnaire");
             String question = rs.getString("question");
             rs.close();
             stmt.close();
@@ -99,6 +93,7 @@ public class DAO_Questions
 
     }
     public boolean recherche_par_id_quest(Integer id_question)
+    {
     //Etape 5 : Recherche d'une question par son id_question
         System.out.println();
         System.out.println("Recherche des questions dans la base...");
@@ -119,7 +114,7 @@ public class DAO_Questions
     }
         catch (SQLException e) {e.printStackTrace();return false;}
 
-}
+    }
     public boolean supprimer (String login, String password)
     {
         //Etape 7 : Suppression d'une question de la table "questions"
