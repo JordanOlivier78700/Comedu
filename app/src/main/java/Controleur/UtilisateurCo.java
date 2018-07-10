@@ -27,6 +27,15 @@ public class UtilisateurCo
     return adm;
   }
 
+  public String login;
+  public String password;
+  public String nom;
+  public String prenom;
+
+  public void setAdm(boolean adm) {
+    this.adm = adm;
+  }
+
   public String getPrenom() {
     return prenom;
   }
