@@ -30,12 +30,6 @@ public class DAO_Utilisateurs
 
 
         //Etape 1 : Ajouter le driver JDBC qui permet la connexion entre le code JAVA et la BDD
-
-        try {
-            Class.forName(this.JDBC_driver);
-            //Etape 2 : Se connecter à la base de données
-        //STEP 2: Ajouter le driver JDBC qui permet la connexion entre le code JAVA et la BDD
-
         try {
             Class.forName(this.JDBC_driver);
             //Etape 2 : Se connecter à la base de données
@@ -47,18 +41,6 @@ public class DAO_Utilisateurs
             }
             catch (SQLException e){e.printStackTrace();return null;}}catch(ClassNotFoundException e) {e.printStackTrace();return null;}
     }
-    /*public void deconnection()
-    {
-    	try
-    	{
-			this.conn.close();
-		}
-    	catch (SQLException e) {e.printStackTrace();}
-    }*/
-    public boolean recherche (String login, String password)
-    {
-        //STEP 4: Recherche du contenu de la table "users"
-
 
     public UtilisateurCo recherche(String login)
     {
