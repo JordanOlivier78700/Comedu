@@ -3,11 +3,21 @@ package Controleur;
 public class UtilisateurCo
 {
   
-  private String login;
-  private boolean adm;
-  private String prenom;
-  private String nom;
-  private String classe;
+  protected String login;
+  protected String password;
+  protected boolean adm;
+  protected String prenom;
+  protected String nom;
+  protected String classe;
+
+  public UtilisateurCo(String login, String pass, String nom, String prenom, String classe)
+  {
+    this.login = login;
+    this.password = pass;
+    this.nom = nom;
+    this.prenom = prenom;
+    this.classe = classe;
+  }
 
   public String getLogin() {
     return login;

@@ -1,3 +1,4 @@
+package Controleur;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -15,7 +16,6 @@ public class DAO_Utilisateurs
     //Identifiants de la base de données
     private  String USER = "root";
     private  String PASS = "mdproot";
-
     private Statement stmt = null;
 
     public DAO_Utilisateurs()
@@ -39,7 +39,8 @@ public class DAO_Utilisateurs
             catch (SQLException e){e.printStackTrace();return null;}}catch(ClassNotFoundException e) {e.printStackTrace();return null;}
     }
 
-    public boolean recherche (String login, String password)
+
+    public UtilisateurCo recherche(String login)
     {
         //STEP 4: Recherche du contenu de la table "users"
         System.out.println();
@@ -56,44 +57,26 @@ public class DAO_Utilisateurs
             rs.next();
             String login2 =rs.getString("login");
             String password2 = rs.getString("password");
+            boolean adm = rs.getBoolean("adm");
+            String nom2 =rs.getString("nom");
+            String prenom2 = rs.getString("prenom");
+            String classe2 = rs.getString("classe");
+
+
             rs.close();
             stmt.close();
             conn.close();
-            return login2.equals(login) && password.equals(password2);
+
+            if(adm)
+                return new CompteAdmin(login2,password2,nom2,prenom2,classe2);
+            else
+                return new Etudiant(login2,password2,nom2,prenom2,classe2);
         }
-        catch (SQLException e) {e.printStackTrace();return false;}
+        catch (SQLException e) {e.printStackTrace();return null;}
+
 
     }
-
 }
 
 
 
-
-/*
-            //STEP 8: Clean-up environment
-            rs1.close();
-            stmt.close();
-            conn.close();
-        }catch(SQLException se){
-            //Handle errors for JDBC
-            se.printStackTrace();
-        }catch(Exception e){
-            //Handle errors for Class.forName
-            e.printStackTrace();
-        }finally{
-            //finally block used to close resources
-            try{
-                if(stmt!=null)
-                    stmt.close();
-            }catch(SQLException se2){
-            }// nothing we can do
-            try{
-                if(conn!=null)
-                    conn.close();
-            }catch(SQLException se){
-                se.printStackTrace();
-            }//end finally try
-        }//end try
-        System.out.println();
-        System.out.println("Goodbye!");*/

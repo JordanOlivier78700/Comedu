@@ -8,7 +8,12 @@ public class Question
   private int id_question;
   private int num_questionnaire;
   private String titre_question;
-  private ArrayList  <Reponse_Questionnaire> reponses;
+
+    public void setId_question(int id_question) {
+        this.id_question = id_question;
+    }
+
+    private ArrayList  <Reponse_Questionnaire> reponses;
 
     public int getId_question() {
         return id_question;
