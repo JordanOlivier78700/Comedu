@@ -10,10 +10,12 @@ public class UtilisateurCo
   protected String nom;
   protected String classe;
 
+
   public UtilisateurCo(String login, String pass, String nom, String prenom, String classe)
   {
     this.login = login;
     this.password = pass;
+
     this.nom = nom;
     this.prenom = prenom;
     this.classe = classe;
@@ -60,17 +62,16 @@ public class UtilisateurCo
     this.classe = classe;
   }
 
-
-  public void seConnecter()
-  {
-    //if(utilisateurDAO.recherche("login","password"))
-      //je me co
-    //else
-      //faux pass ou compte
+  public String getPassword() {
+    return password;
   }
 
-  public void seDeconnecter()
-  {
+  public void setPassword(String password) {
+    this.password = password;
   }
 
+  public boolean seConnecter(String log, String pass)
+  {
+    return this.login.compareTo(log)==0 && this.password.compareTo(pass)==0;
+  }
 }
