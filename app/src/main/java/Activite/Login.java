@@ -1,6 +1,8 @@
 package Activite;
 
 import Controleur.DAO_Utilisateurs;
+import Controleur.UtilisateurCo;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,10 +35,14 @@ public class Login extends AppCompatActivity {
         if (!str_Login.isEmpty())
         {
             DAO_Utilisateurs dao_login = new DAO_Utilisateurs();
-            boolean bool = dao_login.recherche(str_Login, str_Password);
-            if (bool) {
+            UtilisateurCo user_co =dao_login.recherche(str_Login);
+
+            if ( user_co.seConnecter(str_Login, str_Password))
+            {
                 startActivity(new Intent(this, Home_connecter_admin.class));
-            } else {
+            }
+            else
+            {
                 //msg erreur
             }
         }

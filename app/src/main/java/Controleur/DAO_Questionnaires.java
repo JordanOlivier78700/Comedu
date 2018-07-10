@@ -1,9 +1,13 @@
+package Controleur;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import Controleur.Questionnaire;
 
 public class DAO_Questionnaires
 {
@@ -42,15 +46,8 @@ public class DAO_Questionnaires
             }
             catch (SQLException e){e.printStackTrace();return null;}}catch(ClassNotFoundException e) {e.printStackTrace();return null;}
     }
-    /*public void deconnection()
-    {
-    	try
-    	{
-			this.conn.close();
-		}
-    	catch (SQLException e) {e.printStackTrace();}
-    }*/
-    public boolean recherche ()
+
+    public Questionnaire recherche (String login)
     {
         //Etape 3 : Recherche du contenu de la table "questionnaires"
         System.out.println();
@@ -70,10 +67,12 @@ public class DAO_Questionnaires
             String user_login = rs.getString("user_login");
             rs.close();
             stmt.close();
+            return new Questionnaire();
         }
-        catch (SQLException e) {e.printStackTrace();return false;}
+        catch (SQLException e) {e.printStackTrace();return null;}
 
     }
+
     public boolean supprimer (Integer id_questionnaire)
     {
         //Etape 3 : Suppression d'un questionnaire de la table "questionnaires"
@@ -113,34 +112,3 @@ public class DAO_Questionnaires
     }
 
 }
-
-
-
-
-/*
-            //STEP 8: Clean-up environment
-            rs1.close();
-            stmt.close();
-            conn.close();
-        }catch(SQLException se){
-            //Handle errors for JDBC
-            se.printStackTrace();
-        }catch(Exception e){
-            //Handle errors for Class.forName
-            e.printStackTrace();
-        }finally{
-            //finally block used to close resources
-            try{
-                if(stmt!=null)
-                    stmt.close();
-            }catch(SQLException se2){
-            }// nothing we can do
-            try{
-                if(conn!=null)
-                    conn.close();
-            }catch(SQLException se){
-                se.printStackTrace();
-            }//end finally try
-        }//end try
-        System.out.println();
-        System.out.println("Goodbye!");*/
