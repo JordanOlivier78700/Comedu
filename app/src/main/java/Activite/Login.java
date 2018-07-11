@@ -3,7 +3,12 @@ package Activite;
 import Controleur.DAO_Utilisateurs;
 import Controleur.UtilisateurCo;
 
+
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,18 +21,19 @@ public class Login extends AppCompatActivity {
     EditText password;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
-        login = (EditText) findViewById (R.id.et_login);
-        password = (EditText) findViewById (R.id.et_password);
+        final EditText login = (EditText) findViewById (R.id.et_login);
+        final EditText password = (EditText) findViewById (R.id.et_password);
     }
 
     public void click_quitter(View view)
     {
         startActivity(new Intent(this, Home.class));
     }
-    public void click_valider(View view) { startActivity(new Intent(this, Home_connecter_admin.class));}
+    public void click_valider(View view)
     {
 
         String str_Login = login.getText().toString();
@@ -43,8 +49,16 @@ public class Login extends AppCompatActivity {
             }
             else
             {
-                //msg erreur
+                createDialog("Erreur de connection","Veuillez verifier vos identifiants !");
             }
         }
     }
+    private void createDialog(String title, String text) {
+        // Création d'une popup affichant un message
+        AlertDialog ad = new AlertDialog.Builder(this)
+                .setPositiveButton("Ok", null).setTitle(title).setMessage(text)
+                .create();
+        ad.show();
+    }
+
 }
