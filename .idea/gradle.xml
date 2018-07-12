@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/mysql-connector-java-5.1.46" />
+            <option value="$PROJECT_DIR$/com.mysql.jdbc_5.1.5" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
