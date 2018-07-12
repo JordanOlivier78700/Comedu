@@ -11,7 +11,7 @@ public class DAO_Questions
 {
 
     private String JDBC_driver= "com.mysql.jdbc.Driver";
-    private String DB_URL = "jdbc:mysql://localhost/comedu";
+    private String DB_URL = "jdbc:mysql://192.178.43.33/comedu";
     private String sql_rech_qst_id = "select * from questions, questionnaires where questions.num_questionnaire = questionnaires.?";
     private String sql_delete_qst = "delete from questions where id_question = ?";
     private String sql_insert_qst = "insert into questions values(?,?,?)";

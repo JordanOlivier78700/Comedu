@@ -13,7 +13,7 @@ public class DAO_Questionnaires
 {
 
     private String JDBC_driver= "com.mysql.jdbc.Driver";
-    private String DB_URL = "jdbc:mysql://localhost/comedu";
+    private String DB_URL = "jdbc:mysql://192.178.43.33/comedu";
     private String sql_rech_qstaire = "select * from questionnaires";
     private String sql_delete_rep = "delete from reponses_users where num_question = ?";
     private String sql_delete_qst = "delete from questions where num_questionnaire = ?";

@@ -10,7 +10,7 @@ public class DAO_Utilisateurs
 {
 
     private String JDBC_driver= "com.mysql.jdbc.Driver";
-    private String DB_URL = "jdbc:mysql://localhost/comedu";
+    private String DB_URL = "jdbc:mysql://192.178.43.33/comedu";
     private String sql_affichage = "select * from users where login = ?";
 
     //Identifiants de la base de données
@@ -27,8 +27,6 @@ public class DAO_Utilisateurs
 
     public Connection connection()
     {
-
-
         //Etape 1 : Ajouter le driver JDBC qui permet la connexion entre le code JAVA et la BDD
         try {
             Class.forName(this.JDBC_driver);
@@ -69,10 +67,10 @@ public class DAO_Utilisateurs
             stmt.close();
             conn.close();
 
-            if(adm)
-                return new CompteAdmin(login2,password2,nom2,prenom2,classe2);
-            else
-                return new Etudiant(login2,password2,nom2,prenom2,classe2);
+            if(adm){
+                return new CompteAdmin(login2,password2,nom2,prenom2,classe2);}
+            else{
+                return new Etudiant(login2,password2,nom2,prenom2,classe2);}
         }
         catch (SQLException e) {e.printStackTrace();return null;}
 
