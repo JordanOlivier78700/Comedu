@@ -27,8 +27,6 @@ public class DAO_Utilisateurs
 
     public Connection connection()
     {
-
-
         //Etape 1 : Ajouter le driver JDBC qui permet la connexion entre le code JAVA et la BDD
         try {
             Class.forName(this.JDBC_driver);

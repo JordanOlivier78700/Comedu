@@ -3,11 +3,7 @@ package Activite;
 import Controleur.DAO_Utilisateurs;
 import Controleur.UtilisateurCo;
 
-
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,10 +24,13 @@ public class Login extends AppCompatActivity {
         this.password = (EditText) findViewById(R.id.et_password);
     }
 
-    public void click_quitter(View view) {
+    //Retour a la page Home
+    public void click_quitter(View view)
+    {
         startActivity(new Intent(this, Home.class));
     }
 
+    //Authentification de l'utilisateur
     public void click_valider(View view) {
 
         String str_Login = this.login.getText().toString();
@@ -40,7 +39,9 @@ public class Login extends AppCompatActivity {
             DAO_Utilisateurs dao_login = new DAO_Utilisateurs();
             UtilisateurCo user_co = dao_login.recherche(str_Login);
 
-            if (user_co.seConnecter(str_Login, str_Password)) {
+            if ( user_co.seConnecter(str_Login, str_Password))
+            {
+                //Affichage de la page d'administration des questionnaires
                 startActivity(new Intent(this, Home_connecter_admin.class));
             } else {
                 AlertDialog ad = new AlertDialog.Builder(this)

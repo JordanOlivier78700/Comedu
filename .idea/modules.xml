@@ -4,8 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Comedu.iml" filepath="$PROJECT_DIR$/Comedu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/com.mysql.jdbc_5.1.5/com.mysql.jdbc_5.1.5.iml" filepath="$PROJECT_DIR$/com.mysql.jdbc_5.1.5/com.mysql.jdbc_5.1.5.iml" />
       <module fileurl="file://C:\Users\user\Documents\GitHub\Comedu\mysql-connector-java-5.1.46\mysql-connector-java-5.1.46.iml" filepath="C:\Users\user\Documents\GitHub\Comedu\mysql-connector-java-5.1.46\mysql-connector-java-5.1.46.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.iml" filepath="$PROJECT_DIR$/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.iml" />
+>>>>>>> 3fc0553d8d1e5dbdd7d394067b33b7b3636e1a87
     </modules>
   </component>
 </project>
