@@ -4,6 +4,7 @@ import Controleur.DAO_Utilisateurs;
 import Controleur.UtilisateurCo;
 
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,10 +20,11 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
-        login = (EditText) findViewById (R.id.et_login);
-        password = (EditText) findViewById (R.id.et_password);
+        this.login = (EditText) findViewById(R.id.et_login);
+        this.password = (EditText) findViewById(R.id.et_password);
     }
 
+    //Retour a la page Home
     public void click_quitter(View view)
     {
         startActivity(new Intent(this, Home.class));

@@ -44,7 +44,6 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginBottom="71dp"
-        android:autoText="false"
         android:text="Login : "
         android:textAlignment="viewEnd"
         android:textSize="30sp"
