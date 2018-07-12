@@ -22,6 +22,7 @@ public class Creer_accueil_questionnaire extends AppCompatActivity {
     }
     public void click_quitter(View view)
     {
+        //Retour a la page Home
         startActivity(new Intent(this, Home_connecter_admin.class));
     }
 }
