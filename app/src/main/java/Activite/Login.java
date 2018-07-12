@@ -30,25 +30,25 @@ public class Login extends AppCompatActivity {
         startActivity(new Intent(this, Home.class));
     }
 
-    //Authentification de l'utilisateur
+    //Authentification de l'utilisateur²
     public void click_valider(View view) {
 
-        String str_Login = this.login.getText().toString();
+        /*String str_Login = this.login.getText().toString();
         String str_Password = this.password.getText().toString();
         if (!str_Login.isEmpty()) {
             DAO_Utilisateurs dao_login = new DAO_Utilisateurs();
             UtilisateurCo user_co = dao_login.recherche(str_Login);
 
             if ( user_co.seConnecter(str_Login, str_Password))
-            {
+            {*/
                 //Affichage de la page d'administration des questionnaires
-                startActivity(new Intent(this, Home_connecter_admin.class));
+                startActivity(new Intent(this, Home_connecter_admin.class));/*
             } else {
                 AlertDialog ad = new AlertDialog.Builder(this)
                         .setPositiveButton("Ok", null).setTitle("Erreur de connection").setMessage("Veuillez verifier vos identifiants !")
                         .create();
                 ad.show();
             }
-        }
+        }*/
     }
 }
