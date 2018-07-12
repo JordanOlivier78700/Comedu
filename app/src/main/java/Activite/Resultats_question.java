@@ -7,7 +7,7 @@ import android.view.View;
 import com.example.jogral.comedu.R;
 
 
-public class Resultats_question_layout extends AppCompatActivity {
+public class Resultats_question extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

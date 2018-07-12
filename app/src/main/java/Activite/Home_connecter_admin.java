@@ -36,8 +36,8 @@ public class Home_connecter_admin extends AppCompatActivity {
     }
     public void click_resultat(View view)
     {
-        //Sélectionner le questionnaire
-        startActivity(new Intent(this, Resultats_question_layout.class));
+        // selectionner le questionnaire
+        startActivity(new Intent(this, Resultats_question.class));
     }
 
 }

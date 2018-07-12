@@ -35,12 +35,10 @@
         android:id="@+id/iv_logo2"
         android:layout_width="100dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:srcCompat="@drawable/comedu" />
+        android:layout_marginBottom="1024dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/comedu"
+        tools:layout_editor_absoluteX="684dp" />
 
     <EditText
         android:id="@+id/et_titre"
