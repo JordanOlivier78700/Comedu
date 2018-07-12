@@ -23,6 +23,6 @@ public class Home extends AppCompatActivity {
     public void click_visiteur(View view)
     {
         //Accès au questionnaire JPO en tant que visiteur
-        startActivity(new Intent(this, Login.class));
+        startActivity(new Intent(this, Visiteur.class));
     }
 }
