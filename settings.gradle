@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':com.mysql.jdbc_5.1.5'

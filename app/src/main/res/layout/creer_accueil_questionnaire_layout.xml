@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_valider"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="200dp"
+        android:onClick="click_valider"
+        android:text="Valider Sauvegarder"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter" />
+
+    <Button
+        android:id="@+id/bt_quitter"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="200dp"
+        android:text="Quitter"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_valider"
+        app:layout_constraintEnd_toStartOf="@+id/bt_valider"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="click_quitter"
+        />
+
+    <ImageView
+        android:id="@+id/iv_logo2"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1024dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/comedu"
+        tools:layout_editor_absoluteX="684dp" />
+
+    <EditText
+        android:id="@+id/et_titre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Titre"
+        app:layout_constraintEnd_toStartOf="@+id/iv_logo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="291dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="description"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/et_titre"
+        app:layout_constraintStart_toStartOf="@+id/et_titre"
+        app:layout_constraintTop_toBottomOf="@+id/et_titre" />
+
+</android.support.constraint.ConstraintLayout>

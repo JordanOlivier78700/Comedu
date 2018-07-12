@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_valider2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="200dp"
+        android:text="Valider Sauvegarder"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter2"
+        tools:layout_editor_absoluteY="979dp" />
+
+    <Button
+        android:id="@+id/bt_quitter2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="200dp"
+        android:text="Quitter"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_valider2"
+        app:layout_constraintEnd_toStartOf="@+id/bt_valider2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_titre"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Titre du questionnaire"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_logo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_logo2"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1024dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/comedu"
+        tools:layout_editor_absoluteX="684dp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="312dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu tristique nulla. Donec sollicitudin nunc a odio blandit, quis volutpat felis feugiat. Sed euismod urna ac ullamcorper maximus. Proin euismod ante et faucibus varius. Maecenas sit amet placerat dolor, vel suscipit orci. In faucibus feugiat auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vivamus viverra dapibus justo. Ut orci leo, pellentesque vitae scelerisque mattis, porta vitae lectus. Nam at congue justo. Pellentesque sed commodo dui. Ut ultrices ultricies aliquam. Cras pretium metus non velit ornare, id iaculis risus ornare. Curabitur euismod blandit nibh ac sodales. Nulla facilisi. Ut dictum euismod rhoncus. Etiam vulputate purus dui, non vehicula dolor imperdiet vel. Aenean sit amet faucibus sem, dictum consequat nulla. Suspendisse id magna molestie, ultrices orci et, dictum eros. Sed semper dolor eu ullamcorper mollis."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titre" />
+
+</android.support.constraint.ConstraintLayout>
