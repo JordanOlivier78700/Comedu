@@ -28,11 +28,13 @@ public class Login extends AppCompatActivity {
         final EditText login = (EditText) findViewById (R.id.et_login);
         final EditText password = (EditText) findViewById (R.id.et_password);
     }
-
+    //Retour a la page Home
     public void click_quitter(View view)
     {
         startActivity(new Intent(this, Home.class));
     }
+
+    //Authentification de l'utilisateur
     public void click_valider(View view)
     {
 
@@ -45,6 +47,7 @@ public class Login extends AppCompatActivity {
 
             if ( user_co.seConnecter(str_Login, str_Password))
             {
+                //Affichage de la page d'administration des questionnaires
                 startActivity(new Intent(this, Home_connecter_admin.class));
             }
             else
