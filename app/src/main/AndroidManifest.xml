@@ -30,7 +30,8 @@
         <activity android:name="Activite.Creer_accueil_questionnaire">
         </activity>
 
-        <activity android:name="Activite.Resultats_question_layout">
+
+        <activity android:name="Activite.Resultats_question">
         </activity>
 
     </application>
