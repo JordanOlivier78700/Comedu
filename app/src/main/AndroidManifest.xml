@@ -50,7 +50,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="Activite.Resultats_question_layout">
+        <activity android:name="Activite.Resultats_question">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -29,22 +29,6 @@ public class Login extends AppCompatActivity {
     }
     public void click_valider(View view) { startActivity(new Intent(this, Home_connecter_admin.class));}
     {
-
-        String str_Login = login.getText().toString();
-        String str_Password = password.getText().toString();
-        if (!str_Login.isEmpty())
-        {
-            DAO_Utilisateurs dao_login = new DAO_Utilisateurs();
-            UtilisateurCo user_co =dao_login.recherche(str_Login);
-
-            if ( user_co.seConnecter(str_Login, str_Password))
-            {
-                startActivity(new Intent(this, Home_connecter_admin.class));
-            }
-            else
-            {
-                //msg erreur
-            }
-        }
+        startActivity(new Intent(this, Home_connecter_admin.class));
     }
 }
