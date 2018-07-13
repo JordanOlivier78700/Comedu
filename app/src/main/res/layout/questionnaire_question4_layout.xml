@@ -32,7 +32,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="200dp"
         android:layout_marginStart="8dp"
-        android:onClick="click_jpo3continuer"
+        android:onClick="click_jpo4continuer"
         android:text="Valider Sauvegarder"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,23 +64,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/et_choix1"
-        android:layout_width="355dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="245dp"
-        android:layout_marginStart="200dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Réponse 1"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_question6" />
-
     <TextView
-        android:id="@+id/tv_question6"
+        android:id="@+id/tv_question8"
         android:layout_width="500dp"
         android:layout_height="200dp"
         android:layout_marginEnd="100dp"
@@ -90,5 +75,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_question1" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="200dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="552dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -12,7 +12,7 @@ public class Questionnaire_JPO_2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_visiteur);
+        setContentView(R.layout.questionnaire_question2_layout);
     }
     public void click_jpo2continuer(View view)
     {

@@ -12,9 +12,9 @@ public class Questionnaire_JPO_3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_visiteur);
+        setContentView(R.layout.questionnaire_question3_layout);
     }
-    public void click_jpo1continuer(View view)
+    public void click_jpo3continuer(View view)
     {
         //Accès au questionnaire JPO en tant que visiteur
         startActivity(new Intent(this, Questionnaire_JPO_4.class));

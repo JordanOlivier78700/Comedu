@@ -23,20 +23,17 @@
         <activity android:name="Activite.Visiteur">
         </activity>
 
-
         <activity android:name="Activite.Home_connecter_admin">
         </activity>
 
         <activity android:name="Activite.Creer_accueil_questionnaire">
         </activity>
 
-
         <activity android:name="Activite.Resultats_question">
         </activity>
 
         <activity android:name="Activite.Questionnaire_JPO_1">
         </activity>
-
 
         <activity android:name="Activite.Questionnaire_JPO_2">
         </activity>
