@@ -85,7 +85,7 @@
         android:layout_marginStart="200dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Réponse 1"
+        android:text="BTS SIO"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
