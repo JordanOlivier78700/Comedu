@@ -70,7 +70,7 @@
         android:layout_height="200dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="200dp"
-        android:text="Candidatez-vous dans d'autres établissements ?"
+        android:text="Quel est le projet qui vous a le plus interessé ?"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
