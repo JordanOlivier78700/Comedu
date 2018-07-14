@@ -12,7 +12,7 @@
         android:layout_marginEnd="100dp"
         android:layout_marginStart="200dp"
         android:text="Quelle est la formation souhaitée ?"
-        android:textAlignment="viewEnd"
+        android:textAlignment="viewStart"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
