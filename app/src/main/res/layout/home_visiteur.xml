@@ -43,13 +43,16 @@
 
     <Button
         android:id="@+id/bt_continuer"
-        android:layout_width="320dp"
+        android:layout_width="700dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginStart="250dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:background="?attr/colorPrimary"
         android:onClick="click_continuer"
         android:text="Continuer"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

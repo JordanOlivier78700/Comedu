@@ -19,4 +19,9 @@ public class Questionnaire_JPO_3 extends AppCompatActivity {
         //Accès au questionnaire JPO en tant que visiteur
         startActivity(new Intent(this, Questionnaire_JPO_4.class));
     }
+    public void click_jpo3precedent(View view)
+    {
+        //Retour à la question 2
+        startActivity(new Intent(this, Questionnaire_JPO_2.class));
+    }
 }

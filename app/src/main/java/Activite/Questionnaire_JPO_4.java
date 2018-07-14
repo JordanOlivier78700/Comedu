@@ -16,10 +16,14 @@ public class Questionnaire_JPO_4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionnaire_question4_layout);
     }
-    public void click_jpo4continuer(View view)
+    public void click_jpo4Terminer(View view)
     {
-        //Accès au questionnaire JPO en tant que visiteur
-        startActivity(new Intent(this, Questionnaire_JPO_4.class));
+        //Fin du questionnaire, retour à la home page
+        startActivity(new Intent(this, Home.class));
     }
-
+    public void click_jpo4precedent(View view)
+    {
+        //Retour à la question 3
+        startActivity(new Intent(this, Questionnaire_JPO_3.class));
+    }
 }
