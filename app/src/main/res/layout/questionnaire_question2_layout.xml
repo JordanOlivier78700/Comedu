@@ -64,17 +64,6 @@
         app:layout_constraintEnd_toStartOf="@+id/bt_valider"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!--
-    <TextView
-        android:id="@+id/tv_question"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:text="Question n° 2 :"
-        android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="200dp" />
-        -->
 
     <EditText
         android:id="@+id/et_choix1"
@@ -84,7 +73,7 @@
         android:layout_marginStart="200dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Réponse 1"
+        android:hint="Affiche, Internet, ..."
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
