@@ -7,28 +7,33 @@
 
     <Button
         android:id="@+id/bt_visiteur"
-        android:layout_width="320dp"
+        android:layout_width="700dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="52dp"
+        android:background="?android:attr/colorSecondary"
+        android:onClick="click_visiteur"
         android:text="Visiteur"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bt_co"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="click_visiteur"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bt_co"
-        android:layout_width="320dp"
+        android:layout_width="700dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="52dp"
+        android:background="?attr/colorPrimary"
+        android:onClick="click_co"
         android:text="Se connecter"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="click_co"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_titre"
