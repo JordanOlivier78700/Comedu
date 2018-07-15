@@ -40,27 +40,27 @@ public class Questionnaire_JPO_1 extends AppCompatActivity
         //Récupérer l'état des CheckBox
         if (this.bts.isSelected())
         {
-            res.add(this.bts);
+            res.add(this.bts.getText().toString());
         }
         if (this.master.isSelected())
         {
-            res.add(this.master);
+            res.add(this.master.getText().toString());
         }
         if (this.licence.isSelected())
         {
-            res.add(this.licence);
+            res.add(this.licence.getText().toString());
         }
         if (this.management.isSelected())
         {
-            res.add(this.management);
+            res.add(this.management.getText().toString());
         }
         if (this.gestion.isSelected())
         {
-            res.add(this.gestion);
+            res.add(this.gestion.getText().toString());
         }
         if (this.info.isSelected())
         {
-            res.add(this.info);
+            res.add(this.info.getText().toString());
         }
         this.intent.putExtra("res",this.res) ;
 

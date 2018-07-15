@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/Comedu.iml" filepath="$PROJECT_DIR$/Comedu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.mysql.jdbc_5.1.5/com.mysql.jdbc_5.1.5.iml" filepath="$PROJECT_DIR$/com.mysql.jdbc_5.1.5/com.mysql.jdbc_5.1.5.iml" />
-      <module fileurl="file://D:\Github\Comedu\com.mysql.jdbc_5.1.5\com.mysql.jdbc_5.1.5.iml" filepath="D:\Github\Comedu\com.mysql.jdbc_5.1.5\com.mysql.jdbc_5.1.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jaxb-api-2.2/jaxb-api-2.2.iml" filepath="$PROJECT_DIR$/jaxb-api-2.2/jaxb-api-2.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jaxb-impl-2.2_1/jaxb-impl-2.2_1.iml" filepath="$PROJECT_DIR$/jaxb-impl-2.2_1/jaxb-impl-2.2_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stax-api-1.0.1/stax-api-1.0.1.iml" filepath="$PROJECT_DIR$/stax-api-1.0.1/stax-api-1.0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xerces/xerces.iml" filepath="$PROJECT_DIR$/xerces/xerces.iml" />
     </modules>
   </component>
 </project>

@@ -10,6 +10,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/com.mysql.jdbc_5.1.5" />
+            <option value="$PROJECT_DIR$/jaxb-api-2.2" />
+            <option value="$PROJECT_DIR$/jaxb-impl-2.2_1" />
+            <option value="$PROJECT_DIR$/stax-api-1.0.1" />
+            <option value="$PROJECT_DIR$/xerces" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

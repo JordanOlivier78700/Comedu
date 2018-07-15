@@ -22,6 +22,7 @@ public class Questionnaire_JPO_2 extends AppCompatActivity
         setContentView(R.layout.questionnaire_question2_layout);
         this.intent = getIntent();
         this.res = (Resultat) this.intent.getSerializableExtra("res");
+        this.intent = new Intent(this, Questionnaire_JPO_3.class);
         this.et_choix = findViewById(R.id.et_choix1);
     }
     public void click_jpo2continuer(View view)

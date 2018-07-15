@@ -1,1 +1,1 @@
-include ':app', ':com.mysql.jdbc_5.1.5'
+include ':app', ':com.mysql.jdbc_5.1.5', ':jaxb-api-2.2', ':jaxb-impl-2.2_1', ':stax-api-1.0.1', ':xerces'

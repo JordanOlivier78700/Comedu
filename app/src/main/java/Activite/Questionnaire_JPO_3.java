@@ -30,6 +30,7 @@ public class Questionnaire_JPO_3 extends AppCompatActivity
         //Accès au questionnaire JPO en tant que visiteur
         this.res.setQ2(this.et_choix.getText().toString());
         this.intent.putExtra("res", this.res);
+        this.res.ecrir_xml();
         startActivity(this.intent);
     }
     public void click_jpo3precedent(View view)
