@@ -93,13 +93,8 @@
         android:layout_width="230dp"
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
-<<<<<<< HEAD
-        android:layout_marginTop="8dp"
-        android:text="BTS SIO"
-=======
         android:layout_marginTop="80dp"
         android:text="BTS"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_question4" />
@@ -110,30 +105,18 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-<<<<<<< HEAD
-        android:text="L3"
-=======
         android:text="Licence"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
-<<<<<<< HEAD
-        android:layout_width="292dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="16dp"
-        android:text="Codeur Informatique"
-=======
         android:layout_width="230dp"
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
         android:text="Master"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -144,11 +127,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-<<<<<<< HEAD
-        android:text="L3 Pro"
-=======
         android:text="Informatique"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -159,11 +138,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-<<<<<<< HEAD
-        android:text="M2i"
-=======
         android:text="Gestion"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -174,11 +149,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-<<<<<<< HEAD
-        android:text="Jesaipas"
-=======
         android:text="Management"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -187,14 +158,9 @@
         android:id="@+id/cb_bts"
         android:layout_width="32dp"
         android:layout_height="50dp"
-<<<<<<< HEAD
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="8dp"
-=======
         android:layout_marginStart="100dp"
         android:layout_marginTop="80dp"
         android:onClick="@android:string/yes"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/tv_question4" />
 
@@ -211,11 +177,7 @@
         android:id="@+id/cb_master"
         android:layout_width="32dp"
         android:layout_height="50dp"
-<<<<<<< HEAD
-        android:layout_marginStart="31dp"
-=======
         android:layout_marginStart="100dp"
->>>>>>> 1add81d631c667baac72abeacabc1bea4f1622d9
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/cb_licence" />
