@@ -14,8 +14,8 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.home_layout);
     }
     //Affichage de la page de connexion Admin/Utilisateurs
-    public void click_co(View view)
-    {
+    public void click_co(View view) {
+        //Accès à la page de connexion
         startActivity(new Intent(this, Login.class));
     }
 

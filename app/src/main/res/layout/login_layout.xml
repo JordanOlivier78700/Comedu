@@ -80,7 +80,7 @@
         android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="32dp"
-        android:onClick="click_valider"
+        android:onClick="click_connecter"
         android:text="Valider"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
