@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.example.jogral.comedu.R;
 
+import Controleur.Graphique;
+
 public class Home_connecter_admin extends AppCompatActivity {
 
     @Override
@@ -37,7 +39,7 @@ public class Home_connecter_admin extends AppCompatActivity {
     public void click_resultat(View view)
     {
         // selectionner le questionnaire
-        startActivity(new Intent(this, Resultats_question.class));
+        startActivity(new Intent(this, Graphique.class));
     }
 
 }

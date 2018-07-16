@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/Comedu.iml" filepath="$PROJECT_DIR$/Comedu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.mysql.jdbc_5.1.5/com.mysql.jdbc_5.1.5.iml" filepath="$PROJECT_DIR$/com.mysql.jdbc_5.1.5/com.mysql.jdbc_5.1.5.iml" />
-      <module fileurl="file://D:\Github\Comedu\com.mysql.jdbc_5.1.5\com.mysql.jdbc_5.1.5.iml" filepath="D:\Github\Comedu\com.mysql.jdbc_5.1.5\com.mysql.jdbc_5.1.5.iml" />
     </modules>
   </component>
 </project>
