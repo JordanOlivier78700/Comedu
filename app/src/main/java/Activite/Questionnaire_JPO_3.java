@@ -12,8 +12,7 @@ import Controleur.Resultat;
 
 public class Questionnaire_JPO_3 extends AppCompatActivity
 {
-    Intent intent;
-    Resultat res;
+
     EditText et_choix;
 
     @Override
@@ -21,16 +20,13 @@ public class Questionnaire_JPO_3 extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionnaire_question3_layout);
 
-        this.intent = getIntent();
-        this.res = (Resultat) this.intent.getSerializableExtra("res");
+
         this.et_choix = findViewById(R.id.et_choix1);
     }
     public void click_jpo3continuer(View view)
     {
         //Accès au questionnaire JPO en tant que visiteur
-        this.res.setQ2(this.et_choix.getText().toString());
-        this.intent.putExtra("res", this.res);
-        startActivity(this.intent);
+        startActivity(new Intent(this, Questionnaire_JPO_4.class));
     }
     public void click_jpo3precedent(View view)
     {

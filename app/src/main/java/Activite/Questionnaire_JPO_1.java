@@ -18,8 +18,7 @@ public class Questionnaire_JPO_1 extends AppCompatActivity
     CheckBox info;
     CheckBox management;
     CheckBox gestion;
-    Intent intent;
-    Resultat res = new Resultat();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,41 +30,12 @@ public class Questionnaire_JPO_1 extends AppCompatActivity
         this.info = findViewById(R.id.cb_info);
         this.management = findViewById(R.id.cb_management);
         this.gestion = findViewById(R.id.cb_gestion);
-        this.intent = new Intent(this, Questionnaire_JPO_2.class);
 
     }
     public void click_jpo1continuer(View view)
     {
-
-        //Récupérer l'état des CheckBox
-        if (this.bts.isSelected())
-        {
-            res.add(this.bts);
-        }
-        if (this.master.isSelected())
-        {
-            res.add(this.master);
-        }
-        if (this.licence.isSelected())
-        {
-            res.add(this.licence);
-        }
-        if (this.management.isSelected())
-        {
-            res.add(this.management);
-        }
-        if (this.gestion.isSelected())
-        {
-            res.add(this.gestion);
-        }
-        if (this.info.isSelected())
-        {
-            res.add(this.info);
-        }
-        this.intent.putExtra("res",this.res) ;
-
         //Accès au questionnaire JPO en tant que visiteur
-        startActivity(this.intent);
+        startActivity(new Intent(this, Questionnaire_JPO_2.class));
     }
     public void click_jpo1Quitter(View view)
     {

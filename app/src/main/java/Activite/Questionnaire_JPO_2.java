@@ -12,24 +12,18 @@ import Controleur.Resultat;
 
 public class Questionnaire_JPO_2 extends AppCompatActivity
 {
-    Intent intent;
-    Resultat res;
     EditText et_choix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionnaire_question2_layout);
-        this.intent = getIntent();
-        this.res = (Resultat) this.intent.getSerializableExtra("res");
         this.et_choix = findViewById(R.id.et_choix1);
     }
     public void click_jpo2continuer(View view)
     {
         //Accès à la question 3 en tant que visiteur
-        this.res.setQ3(this.et_choix.getText().toString());
-        this.intent.putExtra("res", this.res);
-        startActivity(this.intent);
+        startActivity(new Intent(this, Questionnaire_JPO_3.class));
     }
     public void click_jpo2precedent(View view)
     {
