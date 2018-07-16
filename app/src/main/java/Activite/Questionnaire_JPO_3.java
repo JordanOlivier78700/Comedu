@@ -20,7 +20,6 @@ public class Questionnaire_JPO_3 extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionnaire_question3_layout);
-
         this.intent = getIntent();
         this.res = (Resultat) this.intent.getSerializableExtra("res");
         this.et_choix = findViewById(R.id.et_choix1);
