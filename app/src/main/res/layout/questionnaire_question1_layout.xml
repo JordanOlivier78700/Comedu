@@ -160,7 +160,6 @@
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="80dp"
-        android:onClick="@android:string/yes"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/tv_question4" />
 
