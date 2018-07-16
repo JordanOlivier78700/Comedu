@@ -5,12 +5,151 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:text="Salon"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:text="Rencontres"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:text="Banderole"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:text="Flyer"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:text="Internet, Facebook"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="188dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:text="Bouche à oreille"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_valider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question5" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="188dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_valider"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
+
+    <TextView
+        android:id="@+id/tv_question2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="200dp"
+        android:text="Question n° 2:"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/iv_itescia"
         android:layout_width="300dp"
         android:layout_height="140dp"
+        android:layout_marginEnd="306dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
@@ -25,147 +164,51 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/comedu" />
 
-    <EditText
-        android:id="@+id/et_question"
-        android:layout_width="461dp"
-        android:layout_height="126dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:singleLine="false"
-        android:text="Souhaitez-vous déposer un dossier de candidature ?"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/rb_choix1"
-        app:layout_constraintStart_toStartOf="@+id/tv_question"
-        app:layout_constraintTop_toBottomOf="@+id/tv_question" />
-
-    <RadioButton
-        android:id="@+id/rb_choix1"
-        android:layout_width="35dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/ib_del1"
-        app:layout_constraintTop_toBottomOf="@+id/et_question" />
-
-    <RadioButton
-        android:id="@+id/rb_choix2"
-        android:layout_width="35dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/ib_del2"
-        app:layout_constraintTop_toBottomOf="@+id/rb_choix1" />
-
-    <ImageButton
-        android:id="@+id/ib_plus"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="36dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_plus"
-        app:layout_constraintStart_toStartOf="@+id/ib_del2"
-        app:layout_constraintTop_toTopOf="@+id/tv_plus"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
-    <TextView
-        android:id="@+id/tv_plus"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Ajouter une réponse"
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/ib_plus"
-        app:layout_constraintTop_toBottomOf="@+id/rb_choix2" />
-
-    <ImageButton
-        android:id="@+id/ib_del1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/rb_choix1"
-        app:layout_constraintEnd_toStartOf="@+id/rb_choix1"
-        app:layout_constraintStart_toStartOf="@+id/et_question"
-        app:layout_constraintTop_toTopOf="@+id/rb_choix1"
-        app:srcCompat="@android:drawable/ic_delete" />
-
-    <ImageButton
-        android:id="@+id/ib_del2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/rb_choix2"
-        app:layout_constraintEnd_toStartOf="@+id/rb_choix2"
-        app:layout_constraintStart_toStartOf="@+id/ib_del1"
-        app:layout_constraintTop_toTopOf="@+id/rb_choix2"
-        app:srcCompat="@android:drawable/ic_delete" />
-
     <Button
         android:id="@+id/bt_valider"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginStart="8dp"
-        android:text="Valider Sauvegarder"
-        android:textSize="24sp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/colorPrimary"
+        android:onClick="click_jpo2continuer"
+        android:text="Suivant"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_quitter"/>
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter" />
 
     <Button
         android:id="@+id/bt_quitter"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="200dp"
-        android:text="Quitter"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="click_jpo2precedent"
+        android:text="Précédent"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bt_valider"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!--
+
     <TextView
-        android:id="@+id/tv_question"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:text="Question n° 2 :"
+        android:id="@+id/tv_question5"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="200dp"
+        android:text="Comment avez vous été informé de ces portes ouvertes ?"
         android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="200dp" />
-        -->
-
-    <EditText
-        android:id="@+id/et_choix2"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Réponse 2"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/rb_choix2"
-        app:layout_constraintStart_toEndOf="@+id/rb_choix2"
-        app:layout_constraintTop_toTopOf="@+id/rb_choix2" />
-
-    <EditText
-        android:id="@+id/et_choix1"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Réponse 1"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/rb_choix1"
-        app:layout_constraintStart_toEndOf="@+id/rb_choix1"
-        app:layout_constraintTop_toTopOf="@+id/rb_choix1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question2" />
 
 </android.support.constraint.ConstraintLayout>

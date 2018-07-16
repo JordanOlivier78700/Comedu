@@ -12,6 +12,11 @@ public class Visiteur extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_layout);
+        setContentView(R.layout.home_visiteur);
+    }
+    public void click_continuer(View view)
+    {
+        //Accès au questionnaire JPO en tant que visiteur
+        startActivity(new Intent(this, Questionnaire_JPO_1.class));
     }
 }

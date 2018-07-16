@@ -9,14 +9,17 @@
     <TextView
         android:id="@+id/textView_home_visiteur1"
         android:layout_width="649dp"
-        android:layout_height="373dp"
+        android:layout_height="358dp"
+        android:layout_marginBottom="165dp"
+        android:layout_marginTop="80dp"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Bonjour, \n\nCe questionnaire a pour objectif d'obtenir un retour sur les Journées Portes Overtes.\n\nNous vous invitons à le remplir afin d'améliorer les prochaines sessions.\n\nMerci"
-        android:textSize="32dp"
+        android:text="Bonjour, \n\nCette application a été développée par des étudiants pour les étudiants.\n\nSimple et rapide, vos impressions sur votre future école ;)"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_continuer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="473dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_home_visiteur2" />
 
     <ImageView
         android:id="@+id/iv_itescia_home_visiteur"
@@ -40,13 +43,16 @@
 
     <Button
         android:id="@+id/bt_continuer"
-        android:layout_width="320dp"
+        android:layout_width="700dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginStart="250dp"
-        android:onClick="click_visiteur"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:background="?attr/colorPrimary"
+        android:onClick="click_continuer"
         android:text="Continuer"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -54,10 +60,11 @@
         android:id="@+id/textView_home_visiteur2"
         android:layout_width="442dp"
         android:layout_height="112dp"
+        android:layout_marginTop="118dp"
         android:gravity="center_vertical|center_horizontal"
         android:text="Questionnaire Journées Portes Ouvertes"
         android:textSize="38dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="266dp" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_itescia_home_visiteur" />
 </android.support.constraint.ConstraintLayout>
