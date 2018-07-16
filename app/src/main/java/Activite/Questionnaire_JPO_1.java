@@ -8,28 +8,26 @@ import android.widget.CheckBox;
 
 import com.example.jogral.comedu.R;
 
-import Controleur.Resultat;
-
 public class Questionnaire_JPO_1 extends AppCompatActivity
 {
-    CheckBox bts;
-    CheckBox licence;
-    CheckBox master;
-    CheckBox info;
-    CheckBox management;
-    CheckBox gestion;
+    CheckBox btssio;
+    CheckBox licencepro;
+    CheckBox m2i;
+    CheckBox codeurinfo;
+    CheckBox licencegene;
+    CheckBox formationcontinue;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionnaire_question1_layout);
-        this.bts = findViewById(R.id.cb_bts);
-        this.master = findViewById(R.id.cb_master);
-        this.licence = findViewById(R.id.cb_licence);
-        this.info = findViewById(R.id.cb_info);
-        this.management = findViewById(R.id.cb_management);
-        this.gestion = findViewById(R.id.cb_gestion);
+        this.btssio = findViewById(R.id.cb_bts_sio);
+        this.m2i = findViewById(R.id.cb_m2i);
+        this.licencepro = findViewById(R.id.cb_licence_pro);
+        this.codeurinfo = findViewById(R.id.cb_codeur_info);
+        this.formationcontinue = findViewById(R.id.cb_formation_continue);
+        this.licencegene = findViewById(R.id.cb_licence_gene);
 
     }
     public void click_jpo1continuer(View view)

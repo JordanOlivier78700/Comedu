@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tv_question4"
         android:layout_width="500dp"
-        android:layout_height="200dp"
+        android:layout_height="154dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="200dp"
         android:text="Quelle est la formation souhaitée ?"
@@ -55,15 +55,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt_quitter"
-        app:layout_constraintTop_toBottomOf="@+id/cb_management" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_formation_continue"
+        app:layout_constraintVertical_bias="0.783" />
 
     <Button
         android:id="@+id/bt_quitter"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginLeft="50dp"
         android:background="@color/colorPrimary"
         android:onClick="click_jpo1Quitter"
         android:text="Quitter"
@@ -73,7 +73,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bt_valider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.875" />
 
     <TextView
         android:id="@+id/tv_question1"
@@ -94,7 +95,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="80dp"
-        android:text="BTS"
+        android:text=" BTS SIO"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_question4" />
@@ -105,7 +106,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-        android:text="Licence"
+        android:text="Licence pro"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -116,7 +117,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-        android:text="Master"
+        android:text="M2I (Master)"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -127,7 +128,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-        android:text="Informatique"
+        android:text="Codeur info"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -138,7 +139,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-        android:text="Gestion"
+        android:text="Licence générale"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -149,13 +150,13 @@
         android:layout_height="50dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="16dp"
-        android:text="Management"
-        android:textSize="30sp"
+        android:text="Formation continue"
+        android:textSize="26sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <CheckBox
-        android:id="@+id/cb_bts"
+        android:id="@+id/cb_bts_sio"
         android:layout_width="32dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
@@ -164,48 +165,48 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_question4" />
 
     <CheckBox
-        android:id="@+id/cb_licence"
+        android:id="@+id/cb_licence_pro"
         android:layout_width="32dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/cb_bts" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_bts_sio" />
 
     <CheckBox
-        android:id="@+id/cb_master"
+        android:id="@+id/cb_m2i"
         android:layout_width="32dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/cb_licence" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_licence_pro" />
 
     <CheckBox
-        android:id="@+id/cb_info"
+        android:id="@+id/cb_codeur_info"
         android:layout_width="32dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/cb_master" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_m2i" />
 
     <CheckBox
-        android:id="@+id/cb_gestion"
+        android:id="@+id/cb_licence_gene"
         android:layout_width="32dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/cb_info" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_codeur_info" />
 
     <CheckBox
-        android:id="@+id/cb_management"
+        android:id="@+id/cb_formation_continue"
         android:layout_width="32dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/cb_gestion" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_licence_gene" />
 
 </android.support.constraint.ConstraintLayout>

@@ -7,8 +7,6 @@ import android.view.View;
 
 import com.example.jogral.comedu.R;
 
-import Controleur.Graphique;
-
 public class Home_connecter_admin extends AppCompatActivity {
 
     @Override

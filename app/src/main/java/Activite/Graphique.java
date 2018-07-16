@@ -1,8 +1,10 @@
-package Controleur;
+package Activite;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.example.jogral.comedu.R;
 import com.github.mikephil.charting.charts.PieChart;
@@ -41,18 +43,20 @@ public class Graphique extends AppCompatActivity implements OnChartValueSelected
         pieChart.setDescription("");
 
         ArrayList<Entry> yvalues = new ArrayList<Entry>();
-        yvalues.add(new Entry(8f, 0));
-        yvalues.add(new Entry(15f, 1));
-        yvalues.add(new Entry(12f, 2));
+        yvalues.add(new Entry(20f, 0));
+        yvalues.add(new Entry(10f, 1));
+        yvalues.add(new Entry(35f, 2));
         yvalues.add(new Entry(25f, 3));
+        yvalues.add(new Entry(10f, 4));
 
         PieDataSet dataSet = new PieDataSet(yvalues, "");
 
         ArrayList<String> xVals = new ArrayList<String>();
-        xVals.add("Passe");
-        xVals.add("Arret");
-        xVals.add("But");
-        xVals.add("Joue");
+        xVals.add("BTS SIO");
+        xVals.add("Licence pro");
+        xVals.add("M2I");
+        xVals.add("Codeur info");
+        xVals.add("Licence générale");
 
         PieData data = new PieData(xVals, dataSet);
         data.setValueFormatter(new PercentFormatter());
@@ -60,11 +64,11 @@ public class Graphique extends AppCompatActivity implements OnChartValueSelected
         pieChart.setData(data);
         pieChart.setDrawHoleEnabled(true);
         pieChart.setTransparentCircleRadius(25f);
-        pieChart.setHoleRadius(25f);
+        pieChart.setHoleRadius(50f);
 
-        dataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
+        dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 
-        data.setValueTextSize(13f);
+        data.setValueTextSize(30f);
     }
 
     @Override
@@ -80,5 +84,10 @@ public class Graphique extends AppCompatActivity implements OnChartValueSelected
     @Override
     public void onNothingSelected() {
         Log.i("PieChart", "nothing selected");
+    }
+
+    public void click_jporesquit(View view) {
+        //Retour menu Admin
+        startActivity(new Intent(this, Home_connecter_admin.class));
     }
 }
