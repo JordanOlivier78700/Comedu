@@ -154,7 +154,7 @@
 
     <CheckBox
         android:id="@+id/cb_bts_sio"
-        android:layout_width="16dp"
+        android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView"
@@ -162,7 +162,7 @@
 
     <CheckBox
         android:id="@+id/cb_licence_pro"
-        android:layout_width="16dp"
+        android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -170,7 +170,7 @@
 
     <CheckBox
         android:id="@+id/cb_m2i"
-        android:layout_width="16dp"
+        android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -178,7 +178,7 @@
 
     <CheckBox
         android:id="@+id/cb_codeur_info"
-        android:layout_width="16dp"
+        android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView4"
@@ -186,7 +186,7 @@
 
     <CheckBox
         android:id="@+id/cb_licence_gene"
-        android:layout_width="16dp"
+        android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView5"
@@ -194,7 +194,7 @@
 
     <CheckBox
         android:id="@+id/cb_formation_continue"
-        android:layout_width="16dp"
+        android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView6"
