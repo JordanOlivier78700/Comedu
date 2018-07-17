@@ -14,15 +14,15 @@ public class Creer_accueil_questionnaire extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.creer_accueil_questionnaire_layout);
     }
-    public void click_valider(View view)
+    public void click_questions(View view)
     {
-        //Création d'un objet de type questionnaire
-        startActivity(new Intent(this, Home_connecter_admin.class));
+        //Création d'un objet de type questionn
+        startActivity(new Intent(this, Creer_question.class));
 
     }
-    public void click_quitter(View view)
+    public void click_annuler(View view)
     {
-        //Retour a la page Home
+        //Retour a la page précédente
         startActivity(new Intent(this, Home_connecter_admin.class));
     }
 }

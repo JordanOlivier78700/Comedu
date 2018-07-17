@@ -20,6 +20,9 @@
         <activity android:name="Activite.Login">
         </activity>
 
+        <activity android:name="Activite.Creer_question">
+        </activity>
+
         <activity android:name="Activite.Visiteur">
         </activity>
 
