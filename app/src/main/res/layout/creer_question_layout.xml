@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/iv_itescia"
-        android:layout_width="300dp"
-        android:layout_height="140dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,8 +17,8 @@
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,8 +27,9 @@
 
     <EditText
         android:id="@+id/et_question"
-        android:layout_width="461dp"
-        android:layout_height="100dp"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="30sp"
@@ -132,40 +133,39 @@
     <Button
         android:id="@+id/bt_valider"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="192dp"
         android:layout_marginEnd="200dp"
         android:layout_marginStart="8dp"
+        android:onClick="click_valider"
         android:text="Valider Sauvegarder"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_quitter"
-        android:onClick="click_valider"
-        />
+        app:layout_constraintStart_toEndOf="@+id/bt_quitter" />
 
     <Button
         android:id="@+id/bt_quitter"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="192dp"
         android:layout_marginStart="200dp"
+        android:onClick="click_quitter"
         android:text="Quitter"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bt_valider"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="click_quitter"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_question1"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="72dp"
         android:text="Entrez une question :"
         android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="200dp" />
+        tools:layout_editor_absoluteX="30dp" />
 
     <EditText
         android:id="@+id/et_choix2"

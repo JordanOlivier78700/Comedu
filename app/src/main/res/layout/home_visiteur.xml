@@ -8,62 +8,61 @@
 
     <TextView
         android:id="@+id/textView_home_visiteur1"
-        android:layout_width="649dp"
-        android:layout_height="358dp"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
         android:layout_marginBottom="165dp"
         android:layout_marginTop="80dp"
         android:gravity="center_vertical|center_horizontal"
         android:text="Bonjour, \n\nCette application a été développée par des étudiants pour les étudiants.\n\nSimple et rapide, vos impressions sur votre future école ;)"
-        android:textSize="34dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_continuer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_home_visiteur2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_home_visiteur2"
+        app:layout_constraintVertical_bias="0.442" />
 
     <ImageView
         android:id="@+id/iv_itescia_home_visiteur"
-        android:layout_width="300dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
 
     <ImageView
         android:id="@+id/iv_logo_home_visiteur"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/comedu" />
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/comedu"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/bt_continuer"
-        android:layout_width="700dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginStart="50dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="4dp"
         android:background="?attr/colorPrimary"
         android:onClick="click_continuer"
         android:text="Continuer"
         android:textColor="@android:color/background_light"
-        android:textSize="30sp"
+        android:textSize="15sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView_home_visiteur2"
-        android:layout_width="442dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="118dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:gravity="center_vertical|center_horizontal"
         android:text="Questionnaire Journées Portes Ouvertes"
-        android:textSize="38dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_itescia_home_visiteur" />
