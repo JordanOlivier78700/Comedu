@@ -7,16 +7,16 @@ import java.util.ArrayList;
 public class Resultat implements Serializable
 {
 
-    ArrayList <CheckBox> list_result_cb;
+    ArrayList <String> list_result_cb;
     String Q2;
     String Q3;
 
 
-    public ArrayList<CheckBox> getList_result_cb() {
+    public ArrayList<String> getList_result_cb() {
         return list_result_cb;
     }
 
-    public void setList_result_cb(ArrayList<CheckBox> list_result_cb) {
+    public void setList_result_cb(ArrayList<String> list_result_cb) {
         this.list_result_cb = list_result_cb;
     }
 
@@ -28,7 +28,7 @@ public class Resultat implements Serializable
         this.Q2 = q2;
     }
 
-    public void add(CheckBox cb)
+    public void add(String cb)
     {
         this.list_result_cb.add(cb);
     }
