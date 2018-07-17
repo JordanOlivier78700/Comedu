@@ -43,12 +43,12 @@
         android:id="@+id/tv_login"
         android:layout_width="0dp"
         android:layout_height="25dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginTop="271dp"
         android:text="Login : "
         android:textAlignment="viewEnd"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_pass"
-        app:layout_constraintEnd_toStartOf="@+id/et_login" />
+        app:layout_constraintEnd_toStartOf="@+id/et_login"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_password"
@@ -67,12 +67,12 @@
         android:id="@+id/tv_pass"
         android:layout_width="0dp"
         android:layout_height="25dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="48dp"
         android:text="Password : "
         android:textAlignment="viewEnd"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_quitter"
-        app:layout_constraintEnd_toStartOf="@+id/et_password" />
+        app:layout_constraintEnd_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
 
     <Button
         android:id="@+id/bt_valider"
