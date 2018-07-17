@@ -8,35 +8,33 @@
 
     <ImageView
         android:id="@+id/iv_logo4"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="98dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/comedu" />
 
     <ImageView
         android:id="@+id/iv_itescia3"
-        android:layout_width="300dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="132dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
 
     <Button
         android:id="@+id/bt_quitter4"
-        android:layout_width="700dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="40dp"
-        android:layout_marginStart="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
         android:background="@color/colorPrimary"
-        android:text="Retour"
         android:onClick="click_jporesquit"
+        android:text="Retour"
         android:textColor="@android:color/background_light"
-        android:textSize="30sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -44,10 +42,8 @@
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/piechart"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="150dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="175dp"
-        android:layout_marginRight="30dp"
-        android:textSize="100sp"/>
+        android:layout_height="275dp"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="118dp" />
 </android.support.constraint.ConstraintLayout>
