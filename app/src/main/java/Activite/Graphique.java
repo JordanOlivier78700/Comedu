@@ -68,7 +68,7 @@ public class Graphique extends AppCompatActivity implements OnChartValueSelected
 
         dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 
-        data.setValueTextSize(30f);
+        data.setValueTextSize(13f);
     }
 
     @Override

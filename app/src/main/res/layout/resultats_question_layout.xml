@@ -29,7 +29,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:background="@color/colorPrimary"
         android:onClick="click_jporesquit"
         android:text="Retour"
@@ -42,8 +42,9 @@
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/piechart"
         android:layout_width="match_parent"
-        android:layout_height="275dp"
-        android:textSize="15sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="118dp" />
+        android:layout_height="350dp"
+        android:layout_marginTop="125dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 </android.support.constraint.ConstraintLayout>
