@@ -148,7 +148,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="16dp"
         android:text="Formation continue"
-        android:textSize="13sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 

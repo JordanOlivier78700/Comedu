@@ -127,35 +127,37 @@
 
     <TextView
         android:id="@+id/tv_question2"
-        android:layout_width="300dp"
-        android:layout_height="22dp"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
         android:layout_marginEnd="300dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="96dp"
         android:text="Question n° 2:"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_itescia"
-        android:layout_width="138dp"
-        android:layout_height="77dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="306dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/iv_logo"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="93dp"
-        android:layout_height="73dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/comedu" />
@@ -201,11 +203,10 @@
         android:layout_height="48dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="8dp"
         android:text="Comment avez vous été informé de ces portes ouvertes ?"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_question2" />
 

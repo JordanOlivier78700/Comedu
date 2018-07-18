@@ -25,6 +25,7 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
@@ -34,6 +35,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/comedu" />
@@ -73,20 +75,23 @@
 
     <TextView
         android:id="@+id/tv_question1"
-        android:layout_width="300dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="96dp"
         android:text="Question n° 4 :"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_question8"
-        android:layout_width="300dp"
+        android:layout_width="273dp"
         android:layout_height="45dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="40dp"
         android:text="Quel est le projet qui vous a le plus interessé ?"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
