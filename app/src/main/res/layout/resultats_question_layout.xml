@@ -29,6 +29,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
         android:background="@color/colorPrimary"
         android:onClick="click_jporesquit"
@@ -37,14 +38,34 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/piechart"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="125dp"
-        android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:id="@+id/bt_q1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        android:onClick="click_res_q1"
+        android:text="Question 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_itescia3" />
+
+    <Button
+        android:id="@+id/bt_q2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="click_res_q2"
+        android:text="Question 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_q1"
+        tools:ignore="MissingConstraints" />
+
 </android.support.constraint.ConstraintLayout>

@@ -34,10 +34,10 @@ public class Home_connecter_admin extends AppCompatActivity {
     {   //Afficher la page de création de questionnaire
         startActivity(new Intent(this, Creer_accueil_questionnaire.class));
     }
-    public void click_resultat(View view)
+    public void click_resultats(View view)
     {
         // selectionner le questionnaire
-        startActivity(new Intent(this, Graphique.class));
+        startActivity(new Intent(this, resultats.class));
     }
 
 }

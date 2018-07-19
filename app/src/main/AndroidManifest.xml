@@ -35,7 +35,13 @@
         <activity android:name="Activite.Resultats_question">
         </activity>
 
-        <activity android:name="Activite.Graphique">
+        <activity android:name="Activite.resultats">
+        </activity>
+
+        <activity android:name="Activite.GraphiqueQ1">
+        </activity>
+
+        <activity android:name="Activite.GraphiqueQ2">
         </activity>
 
         <activity android:name="Activite.Questionnaire_JPO_1">

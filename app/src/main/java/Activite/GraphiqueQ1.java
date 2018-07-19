@@ -2,8 +2,8 @@ package Activite;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.example.jogral.comedu.R;
@@ -18,12 +18,12 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class Graphique extends AppCompatActivity implements OnChartValueSelectedListener{
+public class GraphiqueQ1 extends AppCompatActivity implements OnChartValueSelectedListener{
 
     /**
      * empty public constructor
      */
-    public Graphique() {
+    public GraphiqueQ1() {
 
     }
 
@@ -35,7 +35,7 @@ public class Graphique extends AppCompatActivity implements OnChartValueSelected
     @Override
     protected  void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.resultats_question_layout);
+        setContentView(R.layout.resultats_question1_layout);
 
 
         PieChart pieChart = findViewById(R.id.piechart);
@@ -53,10 +53,10 @@ public class Graphique extends AppCompatActivity implements OnChartValueSelected
 
         ArrayList<String> xVals = new ArrayList<String>();
         xVals.add("BTS SIO");
-        xVals.add("Licence pro");
         xVals.add("M2I");
         xVals.add("Codeur info");
         xVals.add("Licence générale");
+        xVals.add("Formation continue");
 
         PieData data = new PieData(xVals, dataSet);
         data.setValueFormatter(new PercentFormatter());
@@ -88,6 +88,6 @@ public class Graphique extends AppCompatActivity implements OnChartValueSelected
 
     public void click_jporesquit(View view) {
         //Retour menu Admin
-        startActivity(new Intent(this, Home_connecter_admin.class));
+        startActivity(new Intent(this, resultats.class));
     }
 }

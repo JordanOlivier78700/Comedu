@@ -23,6 +23,6 @@ public class Creer_question extends AppCompatActivity {
     public void click_question_retour(View view)
     {
         //Retour a la page Home
-        startActivity(new Intent(this, Creer_accueil_questionnaire.class));
+        startActivity(new Intent(this, Creer_question.class));
     }
 }

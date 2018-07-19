@@ -8,48 +8,48 @@
 
     <ImageView
         android:id="@+id/iv_logo4"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="98dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/comedu" />
 
     <ImageView
         android:id="@+id/iv_itescia3"
-        android:layout_width="300dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="132dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/itescia" />
 
     <Button
         android:id="@+id/bt_quitter4"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="200dp"
-        android:text="Quitter"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_valider4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/bt_valider4"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginStart="8dp"
-        android:text="Valider Sauvegarder"
-        android:textSize="24sp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@color/colorPrimary"
+        android:onClick="click_jporesquit"
+        android:text="Retour"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/bt_quitter4" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="125dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
